@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>ÁCIDO</title>
+</head>
+<body>
+    <div class="back-button" onclick="goBack()">
+        <i class="fa fa-arrow-left"></i>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <header>
+        <div class="container">
+            <div class="shadow">
+                <span>CÓMO ELEGIR EL CÓCTEL PERFECTO</span>
+            </div>
+        </div>
+        <div class="button">
+            <a href="#firstquestion" class="start-button">SIGAMOS</a>
+        </div>
+    </header>
+    <div id="firstquestion" class="question">
+        <h2>¿PREFIERES INTENSO O DULCE?</h2>
+    </div>
+    <div class="option">
+        <a href="./intenso/intenso.html">INTENSO</a>
+        <a href="./dulce/dulce.html">DULCE</a>
+    </div>
+    <footer>
+        <div class="footer">
+            <p class="mb-0 py-3 text-muted small">&copy; Copyright <script>document.write(new Date().getFullYear())</script> Hecho con <i class="fa fa-heart text-danger"></i> Por Brian Ruiz Moreno</a></p>
+        </div>
+    </footer>
+</body>
+</html>

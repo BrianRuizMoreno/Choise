@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/css?family=Neuton|Oswald);
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap);
+body{
+    height: 100vh;
+    background: #090d00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+   
+}
+header {
+    margin-top: 400px;
+    background: url(../img/Background.jpg);
+    background-size: cover; 
+    background-position: center;
+    min-height: 750px;
+    height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img img {
+    transform-origin: center center;
+    transition: transform 0.5s ease-in-out;
+}
+.img img:hover {
+    animation: scaleAndRotate 2s ease-in-out infinite alternate;
+}
+@keyframes scaleAndRotate {
+    0% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.5) rotate(-45deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+#firstquestion h2.opcion {
+    animation: colorBlink 2s infinite;
+}
+@keyframes colorBlink {
+    0% { color: #726311; }
+    50% { color: #ffffff; }
+    100% { color: #1f0e4d; }
+}
+.option iframe {
+    transition: transform 0.5s ease-in-out;
+}
+.option iframe:hover {
+    transform: rotate(15deg);
+}
+.shadow{
+    width: 80%;
+    max-width: 40em;
+    text-align: center;
+    align-items: center;
+    letter-spacing: -0.005em;
+    font: 400 1.5em/1.5 "Anton", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #ffffff40;
+    display: inline-block;
+    border: 4px double #ffffff40;
+    border-width: 4px 0;
+    padding: 1.5em 0em;
+}
+.shadow span{
+    font: 700 4.5em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: anim 80s linear infinite;
+}
+@keyframes anim{
+    0%{
+        background-position: 0% 50%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+}
+.button {
+    margin-top: 10px;
+    text-align: center;
+}
+a{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+a:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+a:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+a:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+#firstquestion {
+    text-align: center;
+    margin-top: 30px;
+}
+#firstquestion h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+.option a{
+    margin: 80px;
+}
+#firstquestion h2.opcion {
+    font-size: 2em; 
+    color: #03e9f4; 
+    border: 2px solid transparent;
+    transition: border 0.3s ease-in-out;
+}
+
+#firstquestion h2.opcion:hover {
+    border: 2px solid #03e9f4;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+img {
+    max-width: 100%; 
+    height: 300px; 
+    margin-right: 20px; 
+    border-radius: 20%;
+}
+iframe {
+    width: 300px; 
+    max-width: 100%; 
+    height: 300px;
+    border-radius: 20%;
+ 
+}
+.back-button{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 55px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+  }
+  .back-button:hover{
+    background: #20ba5a;
+    box-shadow: 0 15px 20px;
+    transform: translateY(-7px);
+  }
+footer{
+    color: white;
+}
+@media only screen and (max-width: 600px) {
+    * {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+        margin-top: 80px;
+        margin-left: 30px;
+    }
+    * a {
+        font: 700 2em/1 "Oswald", sans-serif;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+}
